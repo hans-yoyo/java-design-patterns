@@ -5,6 +5,7 @@
 .idea/
 *.iml
 */target/
+node_modules/
 
 # Log file
 *.log
