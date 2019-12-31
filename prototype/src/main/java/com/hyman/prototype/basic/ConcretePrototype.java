@@ -1,4 +1,4 @@
-package com.hyman.prototype;
+package com.hyman.prototype.basic;
 
 /**
  * @author HuHan
