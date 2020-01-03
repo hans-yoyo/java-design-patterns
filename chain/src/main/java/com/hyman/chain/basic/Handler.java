@@ -1,24 +1,19 @@
 package com.hyman.chain.basic;
 
-import lombok.Data;
-
 /**
  * @author HuHan
  * @description
- * @date 2019/10/31 14:07
+ * @date 2020/01/02 16:50
  */
-@Data
 public abstract class Handler {
-    // 处理人姓名
-    protected String name;
 
-    // 下一个处理
-    protected Handler nextHandler;
+    // 维持对下家的引用
+    protected Handler successor;
 
-    public Handler(String name) {
-        this.name = name;
+    public void setSuccessor(Handler handler) {
+        this.successor = handler;
     }
 
-    public abstract boolean process(LeaveRequest leaveRequest);
+    public abstract void handleRequest(String request);
 
 }

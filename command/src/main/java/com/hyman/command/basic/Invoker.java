@@ -3,33 +3,24 @@ package com.hyman.command.basic;
 /**
  * @author HuHan
  * @description
- * @date 2019/10/31 15:24
+ * @date 2020/01/02 22:02
  */
 public class Invoker {
 
-    private Command[] onCommands;
-    private Command[] offCommands;
-    private final int slotNum = 7;
+    private Command command;
 
-    public Invoker() {
-        this.onCommands = new Command[slotNum];
-        this.offCommands = new Command[slotNum];
+    // 构造注入
+    public Invoker(Command command) {
+        this.command = command;
     }
 
-    public void setOnCommand(Command command, int slot) {
-        onCommands[slot] = command;
+    // 设置注入
+    public void setCommand(Command command) {
+        this.command = command;
     }
 
-    public void setOffCommand(Command command, int slot) {
-        offCommands[slot] = command;
-    }
-
-    public void onButtonWasPushed(int slot) {
-        onCommands[slot].execute();
-    }
-
-    public void offButtonWasPushed(int slot) {
-        offCommands[slot].execute();
+    public void call() {
+        command.execute();
     }
 
 }

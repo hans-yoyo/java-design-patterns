@@ -1,4 +1,4 @@
-package com.hyman.chain.basic;
+package com.hyman.chain.example.leave;
 
 /**
  * @author HuHan

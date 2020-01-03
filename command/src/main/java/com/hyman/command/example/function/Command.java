@@ -1,4 +1,4 @@
-package com.hyman.command.basic;
+package com.hyman.command.example.function;
 
 /**
  * @author HuHan
