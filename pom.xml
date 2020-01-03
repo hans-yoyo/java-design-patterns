@@ -24,6 +24,13 @@
         <module>decorator</module>
         <module>facade</module>
         <module>flyweight</module>
+        <module>interpreter</module>
+        <module>iterator</module>
+        <module>mediator</module>
+        <module>memento</module>
+        <module>state</module>
+        <module>template</module>
+        <module>visitor</module>
     </modules>
 
     <properties>
